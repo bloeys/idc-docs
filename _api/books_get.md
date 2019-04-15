@@ -1,7 +1,7 @@
 ---
 title: /books/:id
 position: 1.3
-type: "asdasdasd "
+type: ""
 description: Get Book
 parameters:
   - name:
