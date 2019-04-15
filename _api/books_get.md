@@ -1,7 +1,7 @@
 ---
 title: /books/:id
 position: 1.3
-type: get
+type: ""
 description: Get Book
 parameters:
   - name:
@@ -17,6 +17,7 @@ left_code_blocks:
       });
     title: jQuery
     language: javascript
+
 right_code_blocks:
   - code_block: |2-
       {
