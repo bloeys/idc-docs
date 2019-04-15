@@ -1,33 +1,34 @@
 ---
-title: NEW stuff
+title: void GetSomething(string asd)
 position: 1
+type: ""
+description: Get Book
 parameters:
   - name:
     content:
 content_markdown: |-
-  Welcome to our API.
-
-  This API document is designed for those interested in developing for our platform.
-
-  This API is still under development and will evolve.
-
-  You'll succeed if you do this.
-  {: .success }
-
-  Here's some useful information.
-  {: .info }
-
-  Something may not happen if you try and do this.
-  {: .warning }
-
-  Something bad will happen if you do this.
-  {: .error }
+  Returns a specific book from your collection
 left_code_blocks:
-  - code_block:
-    title:
-    language:
+  - code_block: |-
+      GetSomething("ASD");
+    title: jQuery
+    language: csharp
+
 right_code_blocks:
-  - code_block:
-    title:
-    language:
+  - code_block: |2-
+      {
+        "id": 3,
+        "title": "The Book Thief",
+        "score": 4.3,
+        "dateAdded": "5/1/2015"
+      }
+    title: Response
+    language: json
+  - code_block: |2-
+      {
+        "error": true,
+        "message": "Book doesn't exist"
+      }
+    title: Error
+    language: json
 ---
