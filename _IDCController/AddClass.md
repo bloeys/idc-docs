@@ -5,7 +5,7 @@ type: ""
 description: Registers the class instance with the IDC
 
 parameters:
-  - name: object *classInstance*
+  - name: object classInstance
     content: The class instance to register
 
 content_markdown: |-
@@ -20,7 +20,7 @@ content_markdown: |-
 
 left_code_blocks:
   - title: Example
-    language: C#
+    language: csharp
     code_block: |-
       void Start()
       {

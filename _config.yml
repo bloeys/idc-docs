@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Aviator
-description: Jekyll template for API documentation.
+title: IDC Docs
+description: Documentation for the Ingame Developer Console Unity Asset
 url: https://bloeys.github.io/IDC-docs/
 google_analytics_key:
 permalink: pretty
