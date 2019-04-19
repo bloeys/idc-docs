@@ -5,7 +5,7 @@ type: ""
 description: Runs an IDC command from a passed string
 
 parameters:
-  - name: string cmd
+  - name: string <em>cmd</em>
     content: The command to be executed and its arguments
 
 content_markdown: |-

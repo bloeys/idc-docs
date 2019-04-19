@@ -5,11 +5,11 @@ type: ""
 description: Sets the user suggestions for a command parameter
 
 parameters:
-  - name: string cmdName
+  - name: string <em>cmdName</em>
     content: The name of the command that contains the wanted parameter
-  - name: string paramName
+  - name: string <em>paramName</em>
     content: The name of the parameter
-  - name: string[] newSugg
+  - name: string[] <em>newSugg</em>
     content: An array of suggestions to show for this parameter when using the UI
 
 content_markdown: |-

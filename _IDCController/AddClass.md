@@ -5,7 +5,7 @@ type: ""
 description: Registers the class instance with the IDC
 
 parameters:
-  - name: object classInstance
+  - name: object <em>classInstance</em>
     content: The class instance to register
 
 content_markdown: |-
