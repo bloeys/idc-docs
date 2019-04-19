@@ -5,11 +5,11 @@ type: ""
 description: Registers the class instance with the IDC
 
 parameters:
-  - name: object classInstance
+  - name: object *classInstance*
     content: The class instance to register
 
 content_markdown: |-
-  Adding a class registers all its commands and variables with the IDC.
+  Adding a class registers all of its commands and variables with the IDC.
 
   Adding a class in the **Awake** method of a GameObject that is loaded at scene start might fail. If your object is available from scene start then 
   you should add it in the **Start** method.

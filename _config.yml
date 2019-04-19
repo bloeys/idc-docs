@@ -75,7 +75,7 @@ languages:
   php: PHP
   python: Python
   ruby: Ruby
-  C#: csharp
+  csharp: csharp
 
 _options:
   content_markdown:
