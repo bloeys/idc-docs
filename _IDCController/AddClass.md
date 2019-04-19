@@ -29,5 +29,5 @@ left_code_blocks:
 
 right_code_blocks:
   - code_block:
-    title: 
-    language: 
+    title:
+    language:
