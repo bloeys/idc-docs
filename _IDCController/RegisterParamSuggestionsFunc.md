@@ -5,11 +5,11 @@ type: ""
 description: Takes a function that will be called when suggestions are needed for a parameter
 
 parameters:
-  - name: string cmdName
+  - name: string <em>cmdName</em>
     content: The name of the command that contains the wanted parameter
-  - name: string paramName
+  - name: string <em>paramName</em>
     content: The name of the parameter
-  - name: "Func<string[]> func"
+  - name: Func&gt;string[]&lt; <em>func</em>
     content: The function to be called when the IDC needs suggestions
 
 content_markdown: |-
