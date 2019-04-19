@@ -19,9 +19,6 @@ collections:
   api:
     title: APIs
     position: 2
-  mystuff:
-    title: Wow
-    position: 3
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
