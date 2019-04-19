@@ -13,10 +13,13 @@ parameters:
     content: An array of suggestions to show for this parameter when using the UI
 
 content_markdown: |-
-    User provided suggestions are shown before IDC provided ones and they override suggestions set by the **IDCParam** attribute.
+    User provided suggestions are shown before IDC provided ones.
     
     Suggestions also support Rich Text, and so properties like color can be controlled if wanted. The full list of supported
     tags are shown [here](https://docs.unity3d.com/Manual/StyledText.html).
+
+    User provided suggestions override suggestions set by the **IDCParam** attribute.
+    {: .warning}
 
 right_code_blocks:
   - title: Example
