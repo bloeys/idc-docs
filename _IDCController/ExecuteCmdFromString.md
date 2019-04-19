@@ -19,6 +19,6 @@ right_code_blocks:
   - title: Example 2
     language: csharp
     code_block: |-
-      //Sets the color to white by using constructor of the Color struct
+      //Sets the color to white by using the constructor of the Color struct
       IDCUtils.IDC.ExecuteCmdFromString("SetCmdColor - [1, 1, 1, 1]");
 ---

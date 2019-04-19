@@ -2,24 +2,24 @@
 title: RegisterParamSuggestionsFunc
 position: 1.4
 type: ""
-description: Sets the user suggestions for a command parameter
+description: Takes a function that will be called when suggestions are needed for a parameter
 
 parameters:
   - name: string cmdName
     content: The name of the command that contains the wanted parameter
   - name: string paramName
     content: The name of the parameter
-  - name: string[] newSugg
-    content: An array of suggestions to show for this parameter when using the UI
+  - name: Func<string[]> func
+    content: The function to be called when the IDC needs suggestions
 
 content_markdown: |-
-    User provided suggestions are shown before IDC provided ones.
-    
-    Suggestions also support Rich Text, and so properties like color can be controlled if wanted. The full list of supported
-    tags are shown [here](https://docs.unity3d.com/Manual/StyledText.html).
+    Similar to **UpdateParamSuggestions**, but instead of providing suggestions once it provides a function to the IDC that 
+    when called returns the array of suggestions.
 
-    User provided suggestions override suggestions set by the **IDCParam** attribute.
-    {: .warning}
+    This is useful when you want to provide dynamic suggestions that change depending on the conditions of your game.
+
+    The passed function is only called when the user is being shown the suggestions of the parameter targeted by this method.
+    {: .info}
 
 right_code_blocks:
   - title: Example
