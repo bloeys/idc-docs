@@ -9,7 +9,7 @@ parameters:
     content: The name of the command that contains the wanted parameter
   - name: string paramName
     content: The name of the parameter
-  - name: Func<string[]> func
+  - name: "Func<string[]> func"
     content: The function to be called when the IDC needs suggestions
 
 content_markdown: |-
