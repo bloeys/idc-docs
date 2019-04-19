@@ -1,18 +1,15 @@
 ---
-title: AddClass
-position: 1.0
+title: AddStaticClass
+position: 1.1
 type: ""
-description: Registers the class instance with the IDC
+description: Registers a static class with the IDC
 
 parameters:
-  - name: object classInstance
-    content: The class instance to register
+  - name: Type t
+    content: The type of the class to register
 
 content_markdown: |-
   Adding a class registers all of its commands and variables with the IDC.
-
-  The class will automatically be removed from the IDC when it's garbage collected (e.g. When its GameObject is destroyed)
-  {: .info }
 
   Adding a class in the **Awake** method of a GameObject that is loaded at scene start might fail. If your object is available from scene start then 
   you should add it in the **Start** method.
@@ -24,6 +21,6 @@ left_code_blocks:
     code_block: |-
       void Start()
       {
-        IDCUtils.IDC.AddClass(this);  //Adds the current class to the IDC
+        IDCUtils.IDC.AddStaticClass(typeof(MyStaticClass));
       }
 ---
