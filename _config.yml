@@ -16,15 +16,12 @@ collections:
   documentation:
     title: Documentation
     position: 1
-  api:
-    title: APIs
-    position: 2
   IDCController:
     title: IDCController
-    position: 3
+    position: 2
   IDCUtils:
     title: IDCUtils
-    position: 4
+    position: 3
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -42,11 +39,6 @@ defaults:
   -
     scope:
       type: "documentation"
-    values:
-      _hide_content: true
-  -
-    scope:
-      type: "api"
     values:
       _hide_content: true
   -
