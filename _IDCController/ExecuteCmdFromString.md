@@ -11,7 +11,7 @@ parameters:
 content_markdown: |-
   The string **must** be in the same format as commands entered in the IDC UI while in-game.
 
-left_code_blocks:
+right_code_blocks:
   - title: Example
     language: csharp
     code_block: |-

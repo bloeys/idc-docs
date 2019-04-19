@@ -18,7 +18,7 @@ content_markdown: |-
   you should add it in the **Start** method.
   {: .warning}
 
-left_code_blocks:
+right_code_blocks:
   - title: Example
     language: csharp
     code_block: |-
