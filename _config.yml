@@ -19,6 +19,12 @@ collections:
   api:
     title: APIs
     position: 2
+  IDCController:
+    title: IDCController
+    position: 3
+  IDCUtils:
+    title: IDCUtils
+    position: 4
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -43,6 +49,11 @@ defaults:
       type: "api"
     values:
       _hide_content: true
+  -
+    scope:
+      type: "IDCController"
+    values:
+      _hide_content: true
 
 # -----------
 # CloudCannon
@@ -64,7 +75,7 @@ languages:
   php: PHP
   python: Python
   ruby: Ruby
-  csharp: C#
+  C#: csharp
 
 _options:
   content_markdown:
