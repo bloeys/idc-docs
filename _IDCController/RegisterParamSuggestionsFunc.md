@@ -25,7 +25,15 @@ right_code_blocks:
   - title: Example
     language: csharp
     code_block: |-
-      //Show the following values as suggestions for the 'lineSpacing' parameter of the 'SetLogAreaLineSpacing' command
-      string[] mySuggestions = new string[] { "1", "1.2", "1.4", "1.6" };
-      IDCUtils.IDC.UpdateParamSuggestions("SetLogAreaLineSpacing", "lineSpacing", mySuggestions);
+      string[] GetLogLineSpacingSugg()
+      {
+        //Return a random linespacing between 1-2 as a suggestion
+        string lineSpacing = Random.Range(1f, 2f).ToString();
+        return new string[] { lineSpacing };
+      }
+
+      void Start()
+      {
+        IDCUtils.IDC.RegisterParamSuggestionsFunc("SetLogAreaLineSpacing", "lineSpacing", GetLogLineSpacingSugg);
+      }
 ---
