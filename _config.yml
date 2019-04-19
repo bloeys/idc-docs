@@ -37,7 +37,7 @@ defaults:
     scope:
       type: "documentation"
     values:
-      _hide_content: false
+      _hide_content: true
   -
     scope:
       type: "api"
