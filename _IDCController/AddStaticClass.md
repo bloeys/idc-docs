@@ -5,7 +5,7 @@ type: ""
 description: Registers a static class with the IDC
 
 parameters:
-  - name: Type t
+  - name: Type classType
     content: The type of the class to register
 
 content_markdown: |-
