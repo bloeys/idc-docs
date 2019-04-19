@@ -40,7 +40,7 @@ defaults:
     scope:
       type: "documentation"
     values:
-      _hide_content: true
+      _hide_content: false
   -
     scope:
       type: "api"
@@ -67,6 +67,7 @@ languages:
   php: PHP
   python: Python
   ruby: Ruby
+  csharp: C#
 
 _options:
   content_markdown:
