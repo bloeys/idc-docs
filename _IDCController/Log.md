@@ -9,7 +9,7 @@ parameters:
     content: The message to log to the console
 
 content_markdown: |-
-  Logs a string to the IDC console directly and does not show on the Unity console. Supports Rich Text.
+  Logs a string to the IDC console directly and does not show on the Unity console. Supports [Rich Text](https://docs.unity3d.com/Manual/StyledText.html).
 
 right_code_blocks:
   - title: Example
