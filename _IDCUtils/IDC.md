@@ -1,6 +1,6 @@
 ---
 title: IDC
-position: 1.1.1
+position: 1.0
 type: ""
 description: A variable that provides access to the running IDC instance
 
