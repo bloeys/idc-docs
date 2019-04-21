@@ -51,11 +51,10 @@ defaults:
 # CloudCannon
 
 types:
+  - var
   - get
   - put
   - delete
-  - post
-  - var
 
 languages:
   bash: Bash
