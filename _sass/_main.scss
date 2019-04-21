@@ -235,10 +235,10 @@ h3 .endpoint {
 	}
 }
 
-.endpoint.post {
+.endpoint.var {
 	color: #42A5F5;
 	&:after {
-		content: "POST";
+		content: "Var";
 	}
 }
 

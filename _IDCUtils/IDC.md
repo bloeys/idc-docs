@@ -1,7 +1,7 @@
 ---
 title: IDC
 position: 1.0
-type: ""
+type: "var"
 description: A variable that provides access to the running IDC instance
 
 content_markdown: |-

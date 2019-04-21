@@ -55,6 +55,7 @@ types:
   - put
   - delete
   - post
+  - var
 
 languages:
   bash: Bash
