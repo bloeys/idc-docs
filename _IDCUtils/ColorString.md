@@ -1,6 +1,6 @@
 ---
 title: ColorString
-position: 1.0
+position: 1.1
 type: ""
 description: Surrounds the string with the rich text tag of the wanted color
 

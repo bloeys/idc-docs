@@ -1,6 +1,6 @@
 ---
 title: ItalicString
-position: 1.2
+position: 1.3
 type: ""
 description: Surrounds the string with the 'i' rich text tag
 

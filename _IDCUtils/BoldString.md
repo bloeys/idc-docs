@@ -1,6 +1,6 @@
 ---
 title: BoldString
-position: 1.1
+position: 1.2
 type: ""
 description: Surrounds the string with the 'b' rich text tag
 
