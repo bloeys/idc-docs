@@ -449,11 +449,12 @@ header {
 	background-color: $nav-background-color;
 
 	h1 {
-		height: 5em;
+		height: 6em;
 		box-sizing: border-box;
 		background-image: url($base-url + '/images/logo.svg');
 		background-size: cover;
 		background-repeat: no-repeat;
+		background-position-x: -1em;
 		color: #fff;
 		margin: 0;
 		font-size: 1.7rem;
