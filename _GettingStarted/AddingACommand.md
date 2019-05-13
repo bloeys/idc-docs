@@ -51,6 +51,8 @@ right_code_blocks:
               IDCUtils.IDC.AddClass(this);
           }
 
+          //Since no cmd name is given, the IDC
+          //will use the method name as the cmd name
           [IDCCmd()]
           public void HealPlayer(int healAmount)
           {
