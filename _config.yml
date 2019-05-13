@@ -14,7 +14,7 @@ timezone: Etc/UTC
 
 collections:
   documentation:
-    title: Documentation
+    title: Getting Started
     position: 1
   IDCController:
     title: IDCController
