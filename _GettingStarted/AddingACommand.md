@@ -16,7 +16,7 @@ content_markdown: |-
   {: .info }
 
 right_code_blocks:
-  - title: Private Cmd
+  - title: Example 1
     language: csharp
     code_block: |-
       class Enemy : MonoBehaviour
@@ -35,6 +35,29 @@ right_code_blocks:
           void KillEnemy()
           {
               Destroy(gameObject);
+          }
+      }
+  - title: Example 2
+    language: csharp
+    code_block: |-
+      class Player : MonoBehaviour
+      {
+          public int maxHealth = 100;
+          int health;
+
+          void Start()
+          {
+              health = maxHealth;
+              IDCUtils.IDC.AddClass(this);
+          }
+
+          [IDCCmd()]
+          public void HealPlayer(int healAmount)
+          {
+              health += healAmount;
+
+              if (health > maxHealth)
+                  health = maxHealth;
           }
       }
 ---
