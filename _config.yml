@@ -13,7 +13,7 @@ permalink: pretty
 timezone: Etc/UTC
 
 collections:
-  documentation:
+  GettingStarted:
     title: Getting Started
     position: 1
   IDCController:
