@@ -29,8 +29,8 @@ right_code_blocks:
               IDCUtils.IDC.AddClass(this);
           }
 
-          //When the 'KillAllEnemies' method is called from the IDC, it will be run
-          //on each enemy, therefore killing all enemies
+          //When the 'KillAllEnemies' method is called from the IDC, 
+          //it will be run on each enemy, therefore killing all enemies
           [IDCCmd("KillAllEnemies")]
           void KillEnemy()
           {
