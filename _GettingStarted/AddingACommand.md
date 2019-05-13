@@ -16,7 +16,7 @@ content_markdown: |-
   {: .info }
 
 right_code_blocks:
-  - title: Static Cmd
+  - title: Private Cmd
     language: csharp
     code_block: |-
       class Enemy : MonoBehaviour
