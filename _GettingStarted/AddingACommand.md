@@ -4,15 +4,14 @@ position: 1.0
 type: ""
 description: How to add your own cmd to the IDC
 
-# parameters:
-#   - name: string <em>s</em>
-#     content: The string to surround with the rich text tag
-#   - name: Color <em>c</em>
-#     content: The color to use for the passed string
-
 content_markdown: |-
   The IDC allows you to add cmds so that they can be called from the terminal. Your cmds can either be public or private, and they can be static or in a static class.
   Each cmd is connected to its class instance, so non-static cmds will be called once per class instance, while static cmds will only be called once.
+
+  Registered classes can be MonoBehaviours or normal C# classes.
+
+  Always remember to register your classes, otherwise your IDC cmds and variables will not be picked up.
+  {: .info }
 
 right_code_blocks:
   - title: Static Cmd
