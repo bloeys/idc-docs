@@ -95,4 +95,32 @@ right_code_blocks:
               Destroy(gameObject);
           }
       }
+  - title: Example 4
+    language: csharp
+    code_block: |-
+      using IDC;  //The IDC namespace is always required
+
+      class Player : MonoBehaviour
+      {
+          public int maxHealth = 100;
+          int health;
+
+          void Start()
+          {
+              health = maxHealth;
+              IDCUtils.IDC.AddClass(this);
+          }
+
+          //Multiple IDC cmds can be made from
+          //a single method
+          [IDCCmd()]
+          [IDCCmd("SetPlayerHealth")]
+          public void HealPlayer(int healAmount)
+          {
+              health += healAmount;
+
+              if (health > maxHealth)
+                  health = maxHealth;
+          }
+      }
 ---
