@@ -12,7 +12,7 @@ content_markdown: |-
   'RunCmdFromString' method uses the IDCCmdsEnum.
 
   When you add/remove an IDC cmd/var you need to regenerate the enums. You can do this by
-  simply clicking on the 'Update IDC Enums' in the IDCPrefab.
+  simply clicking on the 'Update IDC Enums' in the IDC Prefab.
   {: .warning }
 
 ---
