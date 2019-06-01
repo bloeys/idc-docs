@@ -5,7 +5,7 @@ type: ""
 description: Takes a function that will be called when suggestions are needed for a parameter
 
 parameters:
-  - name: string <em>cmdName</em>
+  - name: IDCCmdsEnum <em>cmd</em>
     content: The name of the command that contains the wanted parameter
   - name: string <em>paramName</em>
     content: The name of the parameter
@@ -34,6 +34,6 @@ right_code_blocks:
 
       void Start()
       {
-        IDCUtils.IDC.RegisterParamSuggestionsFunc("SetLogAreaLineSpacing", "lineSpacing", GetLogLineSpacingSugg);
+        IDCUtils.IDC.RegisterParamSuggestionsFunc(IDCCmdsEnum.SetLogAreaLineSpacing, "lineSpacing", GetLogLineSpacingSugg);
       }
 ---
