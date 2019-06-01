@@ -79,7 +79,7 @@ right_code_blocks:
           Name and description are shown in the IDC autocomplete.
           The access level specifies where the cmd will be available.
           In this case, this cmd will only be available in the editor and in dev builds.*/
-          [IDCCmd("KillAllEnemies")]
+          [IDCCmd("KillAllEnemies", "Destroy all enemy gameobjects", AccessLevel.EditorAndDevBuild)]
           void KillEnemy()
           {
               Destroy(gameObject);
