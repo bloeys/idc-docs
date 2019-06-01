@@ -27,5 +27,7 @@ right_code_blocks:
     code_block: |-
       //Show the following values as suggestions for the 'lineSpacing' parameter of the 'SetLogAreaLineSpacing' command
       string[] mySuggestions = new string[] { "1", "1.2", "1.4", "1.6" };
-      IDCUtils.IDC.UpdateParamSuggestions(IDCCmdsEnum.SetLogAreaLineSpacing, "lineSpacing", mySuggestions);
+      IDCUtils.IDC.UpdateParamSuggestions(
+        IDCCmdsEnum.SetLogAreaLineSpacing, 
+        "lineSpacing", mySuggestions);
 ---

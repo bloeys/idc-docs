@@ -34,6 +34,8 @@ right_code_blocks:
 
       void Start()
       {
-        IDCUtils.IDC.RegisterParamSuggestionsFunc(IDCCmdsEnum.SetLogAreaLineSpacing, "lineSpacing", GetLogLineSpacingSugg);
+        IDCUtils.IDC.RegisterParamSuggestionsFunc(
+          IDCCmdsEnum.SetLogAreaLineSpacing, 
+          "lineSpacing", GetLogLineSpacingSugg);
       }
 ---
