@@ -13,11 +13,4 @@ content_markdown: |-
   You can not use the IDC unless you add the IDC prefab to your scene.
   {: .warning }
 
-left_code_blocks:
-  - code_block:
-    title:
-    language:
-right_code_blocks:
-  - code_block:
-    title:
-    language:
+---
