@@ -15,10 +15,15 @@ content_markdown: |-
   Always remember to register your classes, otherwise your IDC cmds and variables will not be picked up.
   {: .info }
 
+  Make sure you are using the 'IDC' namespace ("using IDC;"), otherwise IDC classes and methods won't be usable.
+  {: .warning }
+
 right_code_blocks:
   - title: Example 1
     language: csharp
     code_block: |-
+      using IDC;  //This IDC namespace is always required
+
       class Player : MonoBehaviour
       {
           public int maxHealth = 100;
@@ -44,6 +49,8 @@ right_code_blocks:
   - title: Example 2
     language: csharp
     code_block: |-
+      using IDC;  //This IDC namespace is always required
+
       class Enemy : MonoBehaviour
       {
           public int health = 100;
@@ -65,6 +72,8 @@ right_code_blocks:
   - title: Example 3
     language: csharp
     code_block: |-
+      using IDC;  //This IDC namespace is always required
+
       class Enemy : MonoBehaviour
       {
           public int health = 100;
