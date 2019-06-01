@@ -1,6 +1,6 @@
 ---
 title: Adding a Command
-position: 1.0
+position: 1.1
 type: ""
 description: How to add your own cmd to the IDC
 
