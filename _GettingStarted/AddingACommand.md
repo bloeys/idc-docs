@@ -19,27 +19,6 @@ right_code_blocks:
   - title: Example 1
     language: csharp
     code_block: |-
-      class Enemy : MonoBehaviour
-      {
-          public int health = 100;
-
-          void Start()
-          {
-              //Each enemy created registers with the IDC
-              IDCUtils.IDC.AddClass(this);
-          }
-
-          //When the 'KillAllEnemies' method is called from the IDC, 
-          //it will be run on each enemy, therefore killing all enemies
-          [IDCCmd("KillAllEnemies")]
-          void KillEnemy()
-          {
-              Destroy(gameObject);
-          }
-      }
-  - title: Example 2
-    language: csharp
-    code_block: |-
       class Player : MonoBehaviour
       {
           public int maxHealth = 100;
@@ -60,6 +39,50 @@ right_code_blocks:
 
               if (health > maxHealth)
                   health = maxHealth;
+          }
+      }
+  - title: Example 2
+    language: csharp
+    code_block: |-
+      class Enemy : MonoBehaviour
+      {
+          public int health = 100;
+
+          void Start()
+          {
+              //Each enemy created registers with the IDC
+              IDCUtils.IDC.AddClass(this);
+          }
+
+          //When the 'KillAllEnemies' method is called from the IDC, 
+          //it will be run on each enemy, therefore killing all enemies
+          [IDCCmd("KillAllEnemies")]
+          void KillEnemy()
+          {
+              Destroy(gameObject);
+          }
+      }
+  - title: Example 3
+    language: csharp
+    code_block: |-
+      class Enemy : MonoBehaviour
+      {
+          public int health = 100;
+
+          void Start()
+          {
+              //Each enemy created registers with the IDC
+              IDCUtils.IDC.AddClass(this);
+          }
+
+          /*Cmd name, description an access level. 
+          Name and description are shown in the IDC autocomplete.
+          The access level specifies where the cmd will be available.
+          In this case, this cmd will only be available in the editor and in dev builds.*/
+          [IDCCmd("KillAllEnemies")]
+          void KillEnemy()
+          {
+              Destroy(gameObject);
           }
       }
 ---
