@@ -12,9 +12,8 @@ content_markdown: |-
   the window to update.
   {: .info }
 
-  ![](images/logo.svg)
-  ![](images/vars-window.png)
   ![](vars-window.png)
+  <img align="center" src="vars-window.png alt="">
 
 right_code_blocks:
   - title: Example 1
