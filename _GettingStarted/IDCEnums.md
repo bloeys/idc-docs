@@ -1,6 +1,6 @@
 ---
 title: IDC Enums
-position: 1.3
+position: 1.4
 type: ""
 description: IDCCmdsEnum and IDCVarsEnum
 
