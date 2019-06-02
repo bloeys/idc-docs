@@ -12,6 +12,8 @@ content_markdown: |-
   the window to update.
   {: .info }
 
+  ![]("images/vars-window.png")
+
 right_code_blocks:
   - title: Example 1
     language: csharp
