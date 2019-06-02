@@ -12,8 +12,9 @@ content_markdown: |-
   the window to update.
   {: .info }
 
-  ![]("images/logo.svg")
-  ![]("vars-window.png")
+  ![](images/logo.svg)
+  ![](images/vars-window.png)
+  ![](vars-window.png)
 
 right_code_blocks:
   - title: Example 1
