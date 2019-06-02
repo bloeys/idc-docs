@@ -37,7 +37,7 @@ right_code_blocks:
 
           //Since no cmd name is given, the IDC
           //will use the method name as the cmd name
-          [IDCCmd()]
+          [IDCCmd]
           public void HealPlayer(int healAmount)
           {
               health += healAmount;
@@ -113,7 +113,7 @@ right_code_blocks:
 
           //Multiple IDC cmds can be made from
           //a single method
-          [IDCCmd()]
+          [IDCCmd]
           [IDCCmd("SetPlayerHealth")]
           public void HealPlayer(int healAmount)
           {
