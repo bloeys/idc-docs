@@ -10,6 +10,9 @@ content_markdown: |-
 
   To open the vars window, simply run the 'ShowVarsWindow' IDC cmd. This also forces
   the window to update.
+  
+  The vars window can be moved by simply dragging it, and resized from the
+  bottom-right corner of the window.
   {: .info }
 
   ![vars-window](vars-window.png)
