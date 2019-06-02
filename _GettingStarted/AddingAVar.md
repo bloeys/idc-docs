@@ -1,6 +1,6 @@
 ---
 title: Adding a Variable
-position: 1.3
+position: 1.2
 type: ""
 description: How to add track your var with the IDC
 
