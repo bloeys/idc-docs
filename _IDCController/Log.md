@@ -1,6 +1,6 @@
 ---
 title: Log
-position: 1.5
+position: 1.6
 type: ""
 description: Logs the passed message to the IDC console
 
