@@ -16,5 +16,5 @@ content_markdown: |-
   use cases or preferences (e.g. IDC on mobile devices). Settings can either be placed
   on the IDC prefab directly or changed ingame by using the 'SetIDCSettings' cmd.
 
-  ![idc-settings](idc-settings.png)
+  ![idc-settings](idc-settings-inspector.png)
 ---
