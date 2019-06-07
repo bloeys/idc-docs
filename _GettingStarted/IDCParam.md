@@ -10,7 +10,7 @@ content_markdown: |-
   It is used to give some suggestions that will be shown in the
   console window when that parameter is being used.
 
-  ![vars-window](idc-param.png)
+  ![idc-param](idc-param.png)
 
 right_code_blocks:
   - title: Example

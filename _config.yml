@@ -16,12 +16,15 @@ collections:
   GettingStarted:
     title: Getting Started
     position: 1
+  Configuration:
+    title: IDC Config
+    position: 2
   IDCController:
     title: IDCController
-    position: 2
+    position: 3
   IDCUtils:
     title: IDCUtils
-    position: 3
+    position: 4
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
