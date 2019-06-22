@@ -48,7 +48,7 @@ defaults:
     scope:
       type: "IDCController"
     values:
-      _hide_content: true
+      _hide_content: false
 
 # -----------
 # CloudCannon
