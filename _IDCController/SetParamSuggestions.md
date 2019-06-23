@@ -1,5 +1,5 @@
 ---
-title: UpdateParamSuggestions
+title: SetParamSuggestions
 position: 1.3
 type: ""
 description: Sets the user suggestions for a command parameter
@@ -28,7 +28,7 @@ right_code_blocks:
       //Show the following values as suggestions for the 'lineSpacing' parameter of the 'SetLogAreaLineSpacing' command
       string[] mySuggestions = new string[] { "1", "1.2", "1.4", "1.6" };
       
-      IDCUtils.IDC.UpdateParamSuggestions(
+      IDCUtils.IDC.SetParamSuggestions(
         IDCCmdsEnum.SetLogAreaLineSpacing, 
         "lineSpacing", mySuggestions);
 ---

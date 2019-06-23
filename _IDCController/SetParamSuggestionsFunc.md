@@ -1,5 +1,5 @@
 ---
-title: RegisterParamSuggestionsFunc
+title: SetParamSuggestionsFunc
 position: 1.4
 type: ""
 description: Takes a function that will be called when suggestions are needed for a parameter
@@ -34,7 +34,7 @@ right_code_blocks:
 
       void Start()
       {
-        IDCUtils.IDC.RegisterParamSuggestionsFunc(
+        IDCUtils.IDC.SetParamSuggestionsFunc(
           IDCCmdsEnum.SetLogAreaLineSpacing, 
           "lineSpacing", GetLogLineSpacingSugg);
       }
