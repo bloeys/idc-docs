@@ -8,7 +8,7 @@ content_markdown: |-
   The IDC allows you to both track your variables and to edit their values. All IDC vars 
   are shown in the 'Vars Window', where it is shown which gameobject and class each variable belongs to.
 
-  To open the vars window, simply run the 'ShowVarsWindow' IDC cmd. This also forces
+  To open the vars window, simply run the '**ShowVarsWindow**' IDC cmd. This also forces
   the window to update.
   
   The vars window can be moved by simply dragging it, and resized from the
