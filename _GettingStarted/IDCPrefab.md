@@ -1,15 +1,15 @@
 ---
-title: IDC Prefab
+title: The Ingame Developer Console Prefab
 position: 1.0
 type: ""
 description: Adding the IDC to your scene
 
 content_markdown: |-
-  The IDC prefab, found in 'Ingame Developer Console/Prefabs/IDCCanvas', contains the IDC UI and settings.
-  You can toggle the IDC console window by using the BackQuote key (`). If you want to only show the input field,
-  without the log area, then you can use LeftShift + BackQuote.
+  To start simply add the 'IDCCanvas' prefab to your scene. You can find this prefab in the 'Assets/Ingame Developer Console/Prefabs' folder.
+  
+  When your game is running you can toggle the console window by using the Backquote/Backtick key (**`**).
 
-  You can not use the IDC unless you add the IDC prefab to your scene.
+  The IDC will not work if you don't add the IDC prefab to your scene.
   {: .warning }
 
 ---
