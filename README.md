@@ -3,8 +3,6 @@
 API documentation template for Jekyll. Browse through a [live demo](https://tangerine-lemon.cloudvent.net/).
 Start documenting your API with this configurable theme.
 
-![Aviator template screenshot](images/_screenshot.png)
-
 Aviator was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
 
 Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
@@ -32,13 +30,13 @@ Aviator was built with [Jekyll](http://jekyllrb.com/) version 3.7.2, but should 
 Install the dependencies with [Bundler](http://bundler.io/):
 
 ~~~bash
-$ bundle install
+ bundle install
 ~~~
 
 Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
 ~~~bash
-$ bundle exec jekyll serve
+ bundle exec jekyll serve
 ~~~
 
 ## Editing
