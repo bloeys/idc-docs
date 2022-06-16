@@ -5,17 +5,20 @@ type: ""
 description: How to add your own cmd to the IDC
 
 content_markdown: |-
-  The IDC allows you to add cmds so that they can be called from the terminal. Your cmds can either be public or private, and they can be static or in a static class.
-  Each cmd is connected to its class instance, so non-static cmds will be called once per class instance, while static cmds will only be called once.
+  The IDC allows you to add any **method** as a command you can run from the terminal in-game. Methods you use as cmds can be public or private, static or not.
 
-  Registered classes can be MonoBehaviours or normal C# classes. Normal C# classes can also be static.
-  There is no unregister method as there is no need to unregister classes. The IDC will automatically detect when a class is 
-  no longer used in the game and will remove it when the Unity Garbage Collector runs.
+  Just keep in mind that if your cmd is not static then it will be called once per class instance, while static cmds will only be called once.
+  So if you have 10 enemies each with a `Kill` method, then running the `Kill` cmd will call it 10 times, once on each enemy.
+
+  Your new cmds will be added to the IDC when your class is registered (for example on `Start()`). Registered classes can be MonoBehaviours or normal C# classes, and normal C# classes can also be static.
+
+  There is no need to unregister classes as The IDC will automatically detect when a class is 
+  no longer used in the game and will remove it when the Garbage Collector runs.
 
   Always remember to register your classes, otherwise your IDC cmds and variables will not be picked up.
   {: .info }
 
-  Make sure you are using the 'IDC' namespace ("using IDC;"), otherwise IDC classes and methods won't be usable.
+  Make sure you are using the 'IDC' namespace `using IDC;`, otherwise IDC classes and methods won't be usable.
   {: .warning }
 
 right_code_blocks:
@@ -26,17 +29,19 @@ right_code_blocks:
 
       class Player : MonoBehaviour
       {
-          public int maxHealth = 100;
           int health;
+          public int maxHealth = 100;
 
           void Start()
           {
               health = maxHealth;
+
+              //Remember to register your classes!
               IDCUtils.IDC.AddClass(this);
           }
 
           //Since no cmd name is given, the IDC
-          //will use the method name as the cmd name
+          //will use the method name 'HealPlayer' as the cmd name
           [IDCCmd]
           public void HealPlayer(int healAmount)
           {
@@ -62,7 +67,7 @@ right_code_blocks:
           }
 
           //When the 'KillAllEnemies' method is called from the IDC, 
-          //it will be run on each enemy, therefore killing all enemies
+          //it will run on each enemy, therefore killing all enemies
           [IDCCmd("KillAllEnemies")]
           void KillEnemy()
           {
