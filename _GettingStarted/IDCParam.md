@@ -5,10 +5,7 @@ type: ""
 description: Adding custom suggestions for a cmd parameter
 
 content_markdown: |-
-  The IDCParam attribute can be added to parameters of an IDC cmd.
-
-  It is used to give some suggestions that will be shown in the
-  console window when that parameter is being used.
+  You can use the `IDCParam` attribute on top of IDC method parameters to show additional suggestions in the terminal.
 
   ![idc-param](idc-param.png)
 
