@@ -33,9 +33,6 @@ content_markdown: |-
 	![example-cmd](idc-example-cmd.png)
 
   Always remember to register your classes, otherwise your IDC cmds and variables will not be picked up.
-  {: .info }
-
-  Make sure you are using the 'IDC' namespace `using IDC;`, otherwise IDC classes and methods won't be usable.
   {: .warning }
 
   Cmd names **must** contain only letters, numbers, and underscore.
