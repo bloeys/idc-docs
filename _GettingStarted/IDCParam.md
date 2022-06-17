@@ -10,26 +10,48 @@ content_markdown: |-
   ![idc-param](res/idc-param.png)
 
 right_code_blocks:
-  - title: Example
+  - title: Example 1
     language: csharp
     code_block: |-
       using UnityEngine;
       using IDC;
 
-      public class BossAI : MonoBehaviour
+      public class NPC : MonoBehaviour
       {
-          [IDCVar]
-          int aggressivenessLvl = 1;
+          string NPCType;
 
           void Start()
           {
               IDCUtils.IDC.AddClass(this);
           }
 
+          //These three options will be shown as suggestions
           [IDCCmd]
-          void SetAggroLvl([IDCParam("1", "2", "3")] int lvl)
+          void SetNPCType([IDCParam("Friendly", "Passive", "Enemy")] string npcType)
           {
-              aggressivenessLvl = lvl;
+              NPCType = npcType;
+          }
+      }
+
+  - title: Example 2
+    language: csharp
+    code_block: |-
+      using UnityEngine;
+      using IDC;
+
+      public class TreasureChest : MonoBehaviour
+      {
+          void Start()
+          {
+              IDCUtils.IDC.AddClass(this);
+          }
+
+          //This will show the numbers 1, 2, 3, 4, and 5 as suggestions.
+          //A different increment and floats can be used as well.
+          [IDCCmd]
+          void GetItemOfLvl([IDCParam(1, 5)] int lvl)
+          {
+              //Magic goes here
           }
       }
 ---
