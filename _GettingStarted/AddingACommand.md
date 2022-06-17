@@ -15,6 +15,8 @@ content_markdown: |-
   There is no need to unregister classes as The IDC will automatically detect when a class is 
   no longer used in the game and will remove it when the Garbage Collector runs.
 
+  ![heal-player-cmd](idc-heal-player-cmd.png)
+
   Always remember to register your classes, otherwise your IDC cmds and variables will not be picked up.
   {: .info }
 
@@ -46,12 +48,15 @@ right_code_blocks:
           //Since no cmd name is given, the IDC
           //will use the method name 'HealPlayer' as the cmd name
           [IDCCmd]
-          public void HealPlayer(int healAmount)
+          public int HealPlayer(int healAmount)
           {
               health += healAmount;
 
               if (health > maxHealth)
                   health = maxHealth;
+
+              //We return the new health. This will be shown on the console!
+              return health;
           }
       }
   - title: Example 2
