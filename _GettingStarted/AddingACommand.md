@@ -32,6 +32,10 @@ content_markdown: |-
 
     ![example-cmd](res/idc-example-cmd.png)
 
+    Arrays and arrays of classes are also supported by using square brackets '**[]**', and within the square brackets enter the value as if it was single parameter.
+
+    ![example-cmd2](res/idc-example-cmd2.png)
+
     Always remember to register your classes, otherwise your IDC cmds and variables will not be picked up.
     {: .warning }
 
