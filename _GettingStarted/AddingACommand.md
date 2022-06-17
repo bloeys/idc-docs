@@ -15,7 +15,22 @@ content_markdown: |-
   There is no need to unregister classes as The IDC will automatically detect when a class is 
   no longer used in the game and will remove it when the Garbage Collector runs.
 
+	The following cmd changes the player health and returns the new value, which is then printed to the IDC.
+
   ![heal-player-cmd](idc-heal-player-cmd.png)
+
+  While typing a command's name you will see suggestions and can choose one by highlighting it with the arrow keys then pressing '**TAB**' to autocomplete it.
+	Once a command's name is fully typed you will see all the parameters of the command that you need to pass.
+
+	Each parameter is entered by putting a dash '**-**' followed by a space and then the value you want. If the parameter is a string you can either put
+	double quotes or not. If you want to put double quotes inside your string then escape it with '**\**'. For example **"My special \"string\" that has double quotes"**.
+
+	If your parameter is a class or a struct then you need to use brackets '**()**'. If you want to pass parameters to the class/struct constructor then put them
+	between the brackets, separated by commas.
+	
+	Returned values from your commands (if any) are printed to the console.
+
+	![example-cmd](idc-example-cmd.png)
 
   Always remember to register your classes, otherwise your IDC cmds and variables will not be picked up.
   {: .info }
