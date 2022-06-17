@@ -5,38 +5,37 @@ type: ""
 description: How to add your own cmd to the IDC
 
 content_markdown: |-
-  The IDC allows you to add any **method** as a command you can run from the terminal in-game. Methods you use as cmds can be public or private, static or not.
+    The IDC allows you to add any **method** as a command you can run from the terminal in-game. Methods you use as cmds can be public or private, static or not.
 
-  Just keep in mind that if your cmd is not static then it will be called once per class instance, while static cmds will only be called once.
-  So if you have 10 enemies each with a `Kill` method, then running the `Kill` cmd will call it 10 times, once on each enemy.
+    Just keep in mind that if your cmd is not static then it will be called once per class instance, while static cmds will only be called once.
+    So if you have 10 enemies each with a `Kill` method, then running the `Kill` cmd will call it 10 times, once on each enemy.
 
-  Your new cmds will be added to the IDC when your class is registered (for example on `Start()`). Registered classes can be MonoBehaviours or normal C# classes, and normal C# classes can also be static.
+    Your new cmds will be added to the IDC when your class is registered (for example on `Start()`). Registered classes can be MonoBehaviours or normal C# classes, and normal C# classes can also be static.
 
-  There is no need to unregister classes as The IDC will automatically detect when a class is 
-  no longer used in the game and will remove it when the Garbage Collector runs.
+    There is no need to unregister classes as The IDC will automatically detect when a class is 
+    no longer used in the game and will remove it when the Garbage Collector runs.
 
-	The following cmd changes the player health and returns the new value, which is then printed to the IDC.
+    The following cmd changes the player health and returns the new value, which is then printed to the IDC.
+    ![heal-player-cmd](idc-heal-player-cmd.png)
 
-  ![heal-player-cmd](idc-heal-player-cmd.png)
+    While typing a command's name you will see suggestions and can choose one by highlighting it with the arrow keys then pressing '**TAB**' to autocomplete it.
+    Once a command's name is fully typed you will see all the parameters of the command that you need to pass.
 
-  While typing a command's name you will see suggestions and can choose one by highlighting it with the arrow keys then pressing '**TAB**' to autocomplete it.
-	Once a command's name is fully typed you will see all the parameters of the command that you need to pass.
+    Each parameter is entered by putting a dash '**-**' followed by a space and then the value you want. If the parameter is a string you can either put
+    double quotes or not. If you want to put double quotes inside your string then escape it with '**\**'. For example **"My special \"string\" that has double quotes"**.
 
-	Each parameter is entered by putting a dash '**-**' followed by a space and then the value you want. If the parameter is a string you can either put
-	double quotes or not. If you want to put double quotes inside your string then escape it with '**\**'. For example **"My special \"string\" that has double quotes"**.
+    If your parameter is a class or a struct then you need to use brackets '**()**'. If you want to pass parameters to the class/struct constructor then put them
+    between the brackets, separated by commas.
 
-	If your parameter is a class or a struct then you need to use brackets '**()**'. If you want to pass parameters to the class/struct constructor then put them
-	between the brackets, separated by commas.
-	
-	Returned values from your commands (if any) are printed to the console.
+    Returned values from your commands (if any) are printed to the console.
 
-	![example-cmd](idc-example-cmd.png)
+    ![example-cmd](idc-example-cmd.png)
 
-  Always remember to register your classes, otherwise your IDC cmds and variables will not be picked up.
-  {: .warning }
+    Always remember to register your classes, otherwise your IDC cmds and variables will not be picked up.
+    {: .warning }
 
-  Cmd names **must** contain only letters, numbers, and underscore.
-  {: .warning }
+    Cmd names **must** contain only letters, numbers, and underscore.
+    {: .warning }
 
 right_code_blocks:
   - title: Example 1
