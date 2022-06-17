@@ -8,8 +8,8 @@ content_markdown: |-
   The IDC generates two enums, 'IDCCmdsEnum', which contains the names of all your IDC cmds,
   and 'IDCVarsEnum', which contains the names of IDC variables and their classes.
 
-  They are not strictly required, but they will show you better suggestions and can be used by other methods. One example is that the
-  'RunCmdFromString' method uses the IDCCmdsEnum.
+  They are used to show you better suggestions and can be used to run IDC cmds from code.
+  For example you can run an IDC cmd through the `IDCUtils.IDC.RunCmd` method, which requires the IDCCmdsEnum.
 
   If you disabled auto-regenerate in the settings then you should click the 'Update IDC Enums' button in the IDC prefab whenever you add/remove an IDC cmd or var.
   {: .warning }
