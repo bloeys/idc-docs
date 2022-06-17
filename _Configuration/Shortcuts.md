@@ -25,5 +25,5 @@ content_markdown: |-
   Shortcut cmds **must** take **zero** arguments.
   {: .warning }
 
-  ![idc-shortcuts](idc-shortcut.png)
+  ![idc-shortcuts](res/idc-shortcut.png)
 ---

@@ -7,7 +7,7 @@ description: Adding custom suggestions for a cmd parameter
 content_markdown: |-
   You can use the `IDCParam` attribute on top of IDC method parameters to show additional suggestions in the terminal.
 
-  ![idc-param](idc-param.png)
+  ![idc-param](res/idc-param.png)
 
 right_code_blocks:
   - title: Example

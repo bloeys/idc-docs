@@ -11,7 +11,7 @@ content_markdown: |-
   The window shows you a list of game objects, and under each object the registered classes that are
   attached to that game object, and under each class a list of registered variables.
   
-  ![vars-window](idc-vars-window.png)
+  ![vars-window](res/idc-vars-window.png)
 
   The vars window can be moved by dragging it, and resized from the
   bottom-right corner of the window.
@@ -23,11 +23,11 @@ content_markdown: |-
   You can also change the value of an IDC Var by using the `SetVarValue` cmd. This cmd takes the
   name of the variable and its new value, along with the game object and class to change the variable on.
 
-  ![set-var-value-1](idc-set-var-value-1.png)
+  ![set-var-value-1](res/idc-set-var-value-1.png)
 
   After running the previous cmd the health on 'Enemy Copy 2' will become 9999. 
 
-  ![set-var-value-1](idc-set-var-value-2.png)
+  ![set-var-value-1](res/idc-set-var-value-2.png)
 
   If you don't select a game object and a class then all instances of variable are changed.
 

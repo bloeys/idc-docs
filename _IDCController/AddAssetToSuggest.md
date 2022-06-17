@@ -27,7 +27,7 @@ content_markdown: |-
     so it is recommended to call it in 'Start' when your scene first loads.
     {: .info}
 
-    ![idc-settings](idc-asset-sugg.png)
+    ![idc-settings](res/idc-asset-sugg.png)
 
 right_code_blocks:
   - title: Example

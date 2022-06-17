@@ -17,7 +17,7 @@ content_markdown: |-
 
     The following cmd changes the player health and returns the new value, which is then printed to the IDC.
 
-    ![heal-player-cmd](idc-heal-player-cmd.png)
+    ![heal-player-cmd](res/idc-heal-player-cmd.png)
 
     While typing a command's name you will see suggestions and can choose one by highlighting it with the arrow keys then pressing '**TAB**' to autocomplete it.
     Once a command's name is fully typed you will see all the parameters of the command that you need to pass.
@@ -30,7 +30,7 @@ content_markdown: |-
 
     Returned values from your commands (if any) are printed to the console.
 
-    ![example-cmd](idc-example-cmd.png)
+    ![example-cmd](res/idc-example-cmd.png)
 
     Always remember to register your classes, otherwise your IDC cmds and variables will not be picked up.
     {: .warning }

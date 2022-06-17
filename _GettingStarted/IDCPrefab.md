@@ -23,7 +23,7 @@ content_markdown: |-
   
   When your game is running you can toggle the console window by using the Backquote/Backtick key (**`**).
 
-  ![idc-console](idc-console.png)
+  ![idc-console](res/idc-console.png)
 
   The IDC will not work if you don't add the IDC prefab to your scene.
   {: .warning }
