@@ -21,6 +21,9 @@ content_markdown: |-
   Make sure you are using the 'IDC' namespace `using IDC;`, otherwise IDC classes and methods won't be usable.
   {: .warning }
 
+  Cmd names **must** contain only letters, numbers, and underscore.
+  {: .warning }
+
 right_code_blocks:
   - title: Example 1
     language: csharp
