@@ -5,7 +5,13 @@ type: ""
 description: Adding custom suggestions for a cmd parameter
 
 content_markdown: |-
-  You can use the `IDCParam` attribute on top of IDC method parameters to show additional suggestions in the terminal.
+  You can use the `IDCParam` attribute on method parameters to show additional suggestions in the console.
+  
+  These suggestions also support Rich Text, and so properties like color can be controlled if wanted.
+  The list of supported tags can be found [here](https://docs.unity3d.com/Manual/StyledText.html).
+
+  User provided suggestions get shown before IDC provided ones
+  {: .info}
 
   ![idc-param](res/idc-param.png)
 
