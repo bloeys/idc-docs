@@ -1,4 +1,18 @@
 ---
+title: The Ingame Developer Console
+position: 0.9
+type: ""
+description: Introduction
+
+content_markdown: |-
+  The Ingame Developer Console (IDC) is a super powerful and easy to use ingame terminal, which allows you to speed up your game development and even have cheats in your game!.
+
+  After registering your class with the IDC, you can turn your methods into IDC commands (called 'cmds') with full autocomplete and type checking with a single line of code!
+  
+  Your cmds can have any number of parameters and any parameter types, including classes and structs.
+  On top of this, the IDC allows you to track and even change the values of variables through the 'Vars Window'.
+
+---
 title: The Ingame Developer Console Prefab
 position: 1.0
 type: ""
@@ -13,5 +27,3 @@ content_markdown: |-
 
   The IDC will not work if you don't add the IDC prefab to your scene.
   {: .warning }
-
----
