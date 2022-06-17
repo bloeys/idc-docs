@@ -26,6 +26,8 @@ content_markdown: |-
   ![set-var-value-1](idc-set-var-value-1.png)
   ![set-var-value-1](idc-set-var-value-2.png)
 
+  If you don't select a game object and a class then all instances of variable are changed.
+
   The class index is the number after the class name. In the above image, '(Enemy:0)' means the class called 'Enemy' and an index of zero.
   {: .info}
 
