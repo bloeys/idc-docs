@@ -2,20 +2,20 @@
 title: Adding a Variable
 position: 1.2
 type: ""
-description: How to add track your var with the IDC
+description: How to track your variables with the IDC
 
 content_markdown: |-
   The IDC allows you to both track your variables and to edit their values. All IDC vars 
-  are shown in the 'Vars Window', where it is shown which gameobject and class each variable belongs to.
+  are shown in the 'Vars Window', where it is shown which game object and class each variable belongs to.
 
-  To open the vars window, simply run the '**ShowVarsWindow**' IDC cmd. This also forces
+  To open the vars window, simply run the `ShowVarsWindow` IDC cmd. This also forces
   the window to update.
   
-  The vars window can be moved by simply dragging it, and resized from the
+  ![vars-window](idc-vars-window.png)
+
+  The vars window can be moved by dragging it, and resized from the
   bottom-right corner of the window.
   {: .info }
-
-  ![vars-window](vars-window.png)
 
 right_code_blocks:
   - title: Example 1
@@ -28,13 +28,15 @@ right_code_blocks:
           public int maxHealth = 100;
 
           //Just like IDCCmd, this will use the
-          //variables name if no name is given
+          //variable's name if no name is given
           [IDCVar]
           int health;
 
           void Start()
           {
               health = maxHealth;
+
+              //Always remember to register
               IDCUtils.IDC.AddClass(this);
           }
 
