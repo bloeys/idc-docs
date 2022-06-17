@@ -24,6 +24,9 @@ content_markdown: |-
   name of the variable and its new value, along with the game object and class to change the variable on.
 
   ![set-var-value-1](idc-set-var-value-1.png)
+
+  After running the previous cmd the health on 'Enemy Copy 2' will become 9999. 
+
   ![set-var-value-1](idc-set-var-value-2.png)
 
   If you don't select a game object and a class then all instances of variable are changed.
