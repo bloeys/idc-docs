@@ -12,6 +12,8 @@ content_markdown: |-
   Your cmds can have any number of parameters and any parameter types, including classes and structs.
   On top of this, the IDC allows you to track and even change the values of variables through the 'Vars Window'.
 
+  You can find a setup video <https://www.youtube.com/watch?v=zmzn-F0V6OA>
+
 ---
 title: The Ingame Developer Console Prefab
 position: 1.0
